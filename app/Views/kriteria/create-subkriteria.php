@@ -41,7 +41,7 @@
 
             <div class="form-group">
               <label for="jumlahSk" class="jumlahSk">Jumlah Sub Kriteria</label>
-              <input type="text" name="jumlahsk" id="jumlahSk" class="form-control jumlahSk" placeholder="Jumlah sub kriteria.." maxlength="1" pattern="[0-9]+">
+              <input type="text" name="jumlahsk" id="jumlahSk" class="form-control jumlahSk" placeholder="Jumlah sub kriteria.." maxlength="1">
             </div>
 
             <div class="form-group">
@@ -83,7 +83,7 @@
             <input type="text" class="form-control" name="nama[]" id="sk${i}" placeholder="Nama sub kriteria..">
           </div>
           <div class="col-4">
-            <input type="number" class="form-control" name="nilai_preferensi[]" id="np${i}" placeholder="Nilai.." min="1" max="9">
+            <input type="number" class="form-control" name="nilai_preferensi[]" id="np${i}" placeholder="Nilai..">
           </div>
         </div>
         `

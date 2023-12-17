@@ -47,9 +47,9 @@
                         <?php endif; ?>
 
                         <td><?= $row['nama']; ?></td>
+                        <?php $nomor++ ?>
                         <td><?= $row['nilai_preferensi']; ?></td>
                       </tr>
-                      <?php $nomor++ ?>
                     <?php endforeach; ?>
                   <?php else : ?>
                     <tr>

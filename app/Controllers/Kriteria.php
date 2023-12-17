@@ -35,7 +35,8 @@ class Kriteria extends BaseController
     }
 
     $data = $this->request->getPost();
-    $data['nama'] = strtolower(str_replace(" ", "_", $this->request->getPost('nama')));
+    $data['nama'] = str_replace(" ", "_", $this->request->getPost('nama'));
+
 
     if ($this->model->save($data) === FALSE) {
       return $this->response->setJSON(['status' => FALSE, 'errors' => $this->model->errors()]);
@@ -73,7 +74,7 @@ class Kriteria extends BaseController
     }
 
     $data = $this->request->getPost();
-    $data['nama'] = strtolower(str_replace(" ", "_", $this->request->getPost('nama')));
+    $data['nama'] = str_replace(" ", "_", $this->request->getPost('nama'));
 
     if ($this->model->save($data) === FALSE) {
       return $this->response->setJSON(['status' => FALSE, 'errors' => $this->model->errors()]);
