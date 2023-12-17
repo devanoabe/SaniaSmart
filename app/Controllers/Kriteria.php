@@ -63,7 +63,7 @@ class Kriteria extends BaseController
     }
 
     $id = $this->request->getPost('id');
-    $data = $this->model->find($id);
+    $data = $this->model->findKriteriaById($id);
     return $this->response->setJSON($data);
   }
 
@@ -75,6 +75,13 @@ class Kriteria extends BaseController
 
     $data = $this->request->getPost();
     $data['nama'] = str_replace(" ", "_", $this->request->getPost('nama'));
+
+    $this->model->setValidationRules([
+      'id_kriteria' => 'required',
+      'nama' => 'required',
+      'jenis' => 'required',
+      'data_kuantitatitf' => 'required',
+    ]);
 
     if ($this->model->save($data) === FALSE) {
       return $this->response->setJSON(['status' => FALSE, 'errors' => $this->model->errors()]);

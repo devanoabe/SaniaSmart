@@ -72,7 +72,7 @@ class Alternatif extends BaseController
     }
 
     $id = $this->request->getPost('id');
-    $data = $this->model->find($id);
+    $data = $this->model->findAlternatifById($id);
     return $this->response->setJSON($data);
   }
 
@@ -83,6 +83,27 @@ class Alternatif extends BaseController
     }
 
     $data = $this->request->getPost();
+
+    $this->model->setValidationRules([
+      'id_alternatif' => 'required',
+      'id_user' => 'required',
+      'nama' => 'required',
+      'kode' => 'required',
+      'harga' => 'required',
+      'rating_produk' => 'required',
+      'merk' => 'required',
+      'prosesor' => 'required',
+      'kapasitas_ram' => 'required',
+      'tipe_penyimpanan' => 'required',
+      'kapasitas_penyimpanan' => 'required',
+      'ukuran_layar' => 'required',
+      'kartu_grafis' => 'required',
+      'sistem_operasi' => 'required',
+      'masa_garansi' => 'required',
+      'kondisi_produk' => 'required',
+      'url_produk' => 'required',
+    ]);
+
 
     if ($this->model->save($data) === FALSE) {
       return $this->response->setJSON(['status' => FALSE, 'errors' => $this->model->errors()]);

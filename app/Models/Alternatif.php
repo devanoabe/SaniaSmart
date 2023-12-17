@@ -42,6 +42,13 @@ class Alternatif extends Model
     ")->getResultArray();
   }
 
+  public function findAlternatifById()
+  {
+    return $this->db->query("
+      SELECT id_alternatif, kode, nama, harga, rating_produk, merk, prosesor, kapasitas_ram, tipe_penyimpanan, kapasitas_penyimpanan, ukuran_layar, kartu_grafis, sistem_operasi, masa_garansi, kondisi_produk, url_produk   FROM " . $this->table . " WHERE id_user = " . session('id_user') . "
+    ")->getRowArray();
+  }
+
   public function countAlternatifByUser($id_user)
   {
     return $this->where('id_user', $id_user)->countAllResults();

@@ -30,6 +30,13 @@ class Kriteria extends Model
     );
   }
 
+  public function findKriteriaById($id)
+  {
+    return $this->db->query(
+      "SELECT id_kriteria, nama, jenis, data_kuantitatif FROM " . $this->table . " WHERE id_kriteria = $id"
+    )->getRowArray();
+  }
+
   public function getQuantitativeCriteria()
   {
     return $this->db->query(
