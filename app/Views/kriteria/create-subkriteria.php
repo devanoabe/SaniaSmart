@@ -3,20 +3,20 @@
 <?php $this->section('content') ?>
 <div class="section">
   <div class="row">
-    <div class="col-md-10">
+    <div class="col-md-12">
 
-      <h1 class="text-gray-900 mt-2 mb-4"><?= $judul; ?></h1>
+      <h1 class="jdl"><?= $judul; ?></h1>
 
       <div class="card-shadow">
-        <div class="card-body badge-info">
-          <h6>Catatan</h6>
+        <div style="background-color: black;" class="card-body">
+          <h6 style="color: white;">Catatan</h6>
           <hr>
           <ul>
             <li>
-              <p>Masukkan jumlah sub kriteria yang diinginkan sesuai dengan kriteria yang ada</p>
+              <p style="color: white;">Masukkan jumlah sub kriteria yang diinginkan sesuai dengan kriteria yang ada</p>
             </li>
             <li>
-              <p>Masukkan nilai preferensi yang berbeda untuk masing-masing sub kriteria, sesuai dengan tingkat kepentingan yang diprioritaskan. Contoh: dengan rentang nilai 1-9, berikan nilai paling besar untuk sub-kriteria yang dianggap paling penting dan yang terkecil dimulai dari 1. <br> <span class="text-sm text-danger">Pastikan nilai tidak ada yang sama, untuk mendapatkan hasil yang optimal</span></p>
+              <p style="color: white;">Masukkan nilai preferensi yang berbeda untuk masing-masing sub kriteria, sesuai dengan tingkat kepentingan yang diprioritaskan. Contoh: dengan rentang nilai 1-9, berikan nilai paling besar untuk sub-kriteria yang dianggap paling penting dan yang terkecil dimulai dari 1. <br> <span class="text-sm text-danger">Pastikan nilai tidak ada yang sama, untuk mendapatkan hasil yang optimal</span></p>
             </li>
           </ul>
         </div>
@@ -44,8 +44,8 @@
               <input type="text" name="jumlahsk" id="jumlahSk" class="form-control jumlahSk" placeholder="Jumlah sub kriteria.." maxlength="1">
             </div>
 
-            <div class="form-group">
-              <button type="button" class="btn btn-success btn-request" onclick="tambahSub()"> <i class="fa fa-circle-notch"></i> Request</button>
+            <div class="form-group d-flex justify-content-end pt-5">
+              <button style="border-radius: 120px" type="button" class="btn btn-success btn-request" onclick="tambahSub()"> <i class="fa fa-circle-notch"></i> Request</button>
             </div>
 
             <div class="subkriteria-section"></div>
@@ -91,8 +91,8 @@
       $('.subkriteria-section').html(subkriteriaSection)
 
       $('.submit-section').html(`
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-simpan"><i class="fa fa-save"></i> Simpan</button>
+      <div class="form-group d-flex justify-content-end pt-5">
+        <button style="border-radius: 120px" type="submit" class="btn btn-primary btn-simpan"><i class="fa fa-save"></i> Simpan</button>
       </div>
       `)
     }

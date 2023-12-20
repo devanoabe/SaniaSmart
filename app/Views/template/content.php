@@ -9,8 +9,6 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title><?= isset($judul) ? $judul : 'laptopify'; ?></title>
-
   <!-- Custom fonts for this template-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -22,6 +20,8 @@
   <!-- Custom styles for this template-->
   <link href="<?= base_url(); ?>/css/sb-admin-2.min.css" rel="stylesheet">
   <link href="<?= base_url(); ?>/css/my.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>/css/modal.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>/css/table.css" rel="stylesheet">
 
 </head>
 
@@ -36,7 +36,7 @@
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
-      <div id="content">
+      <div style="background: #1C1C1C; color: white" id="content">
 
         <?= $this->include('template/topbar'); ?>
 
@@ -51,7 +51,7 @@
       </div>
       <!-- End of Main Content -->
 
-      <?= $this->include('template/footer'); ?>
+      
 
 
     </div>

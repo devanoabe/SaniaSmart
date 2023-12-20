@@ -49,6 +49,7 @@ class NilaiAkhir extends BaseController
 
             $nilaiPenjumlahan += ($nilaiUtility * $nilaiBobot);
             break;
+            
           }
         }
       }

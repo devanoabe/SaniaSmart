@@ -1,0 +1,56 @@
+div.card.shadow {
+    background-color: rgb(0, 0, 0);
+    border: none;
+  }
+
+  .jdl{
+    color: white;
+    font-size: 27px;
+  }
+
+  .card-header{
+    background-color: black;
+    border: none;
+  }
+  
+  .tbh i{
+    color: black;
+    background-color: #F1491E;
+    padding: 7px;
+    border-radius: 120px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+
+  .tbh {
+    color: white;
+  }
+
+  .hps {
+    border: 1px solid #858783;
+    border-radius: 120px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ubh {
+    border: 1px solid #858783;
+    border-radius: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .dataTables_paginate {
+    padding-top: 15px;
+  }
+
+  tbody {
+    overflow: hidden;
+    height: 1000;
+    max-width: 1000;
+  }
+  
+  #example{
+    border-color: red;
+  }

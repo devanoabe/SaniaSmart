@@ -1,43 +1,114 @@
 <?= $this->extend('template/content') ?>
 
 <?php $this->section('content') ?>
-<div class="section">
-  <div class="row">
-    <div class="col-md-12">
-      <h1 class="text-gray-900"><?= $judul; ?></h1>
-    </div>
-  </div>
 
-  <div class="row">
+<style type="text/css">
+  h1 {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    font-size: 38px;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+  }
+
+  p {
+    font-weight: 100;
+  }
+
+  .text {
+    color: black;
+    font-weight: 600;
+  }
+
+  .icon {
+    color: black;
+  }
+
+  .card {
+    background: #0D0A09;
+    border: none;
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 21px;
+      text-align: center;
+      font-family: 'Noto Sans', sans-serif;
+      color: white;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .btn {
+      float: center;
+    }
+
+    .coba {
+      padding-top: 100px
+    }
+  }
+</style>
+
+<div class="section">
+  <div class="row justify-content-center px-5 py-3">
     <div class="col-md-8">
-      <div class="card" style="width: 18rem;">
+      <h1>Kapan sebuah website membantumu merasa terbantu dalam mengambil keputusan?</h1>
+      <p class="pt-1">
+        Kami akan memberikan contoh penggunaan AHP dalam berbagai konteks, seperti pemilihan vendor, evaluasi kinerja karyawan, pemilihan investasi, dan banyak lagi. Anda akan melihat bagaimana AHP dapat membantu menghasilkan keputusan yang lebih baik.
+      </p>
+    </div>
+    <div class="col-md-4 px-5">
+      <div class="card">
         <div class="text-center">
-          <img src="<?= base_url() ?>/img/undraw_profile.svg" class="card-img-top mt-2" style="width: 80px">
+          <img src="<?= base_url() ?>/img/undraw_profile.svg" class="card-img-top mt-4" style="width: 80px">
         </div>
-        <div class="card-body shadow-sm">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><span class="badge badge-primary"> <?= $data['role']; ?></span></li>
-            <li class="list-group-item"><?= $data['nama']; ?> </li>
-            <li class="list-group-item"><?= $data['username']; ?> </li>
+        <div class="card-body">
+          <ul class="list-group list-group-flush pl-1">
+            <!-- <li style="background: #0D0A09;" class="list-group-item"><span style="background: #F55127" class="badge p-2"> <?= $data['role']; ?></span></li> -->
+            <label style="color: #707070; font-size: 14px">Nama :</label>
+            <li style="background: #0D0A09; color: white; margin-top: -12px" class="list-group-item"><?= $data['nama']; ?> </li>
+            <label style="color: #707070; font-size: 14px">Username :</label>
+            <li style="background: #0D0A09; color: white; margin-top: -12px" class="list-group-item"><?= $data['username']; ?> </li>
           </ul>
-          <hr class="mb-2 mt-0">
-          <div class="text-center">
-            <a href="#" data-toggle="modal" data-target="#modalBoxUbah" data-id="<?= $data['id_user']; ?>" class="card-link update-profile">Ubah Profil</a>
-            <a href="#" data-toggle="modal" data-target="#mbUbahPassword" data-id="<?= $data['id_user']; ?>" class="card-link">Ubah Password</a>
+          <hr class="mb-2 mt-3">
+          <div class="text-right pr-2 pb-2">
+            <a style="background: #F55127; color: black; padding: 5px 14px; border-radius: 120px; font-size: 14px" href="#" data-toggle="modal" data-target="#modalBoxUbah" data-id="<?= $data['id_user']; ?>" class="card-link update-profile">Ubah Profil</a>
+            <!-- <a href="#" data-toggle="modal" data-target="#mbUbahPassword" data-id="<?= $data['id_user']; ?>" class="card-link">Ubah Password</a> -->
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="row justify-content-center pt-5">
+    <div class="col-md-12">
+      <center> <img src="<?= base_url() ?>/img/bg.png" class="card-img-top mt-2"></center>
+    </div>
+  </div>
+
+
   <div class="modal fade" id="modalBoxUbah" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header badge-primary">
-          <h5 class="modal-title text-white"><i class="fa fa-edit"></i> Update Profile</h5>
-        </div>
-
         <form action="/user/update" method="POST" id="formUbah">
+
+          <div class="d-flex justify-content-between">
+            <div class="judul-1">
+              <h1>Edit Data</h1>
+              <p>Form untuk mengedit data yang tersimpan terkait halaman ini!</p>
+            </div>
+            <div class="img-judul">
+              <center> <img src="<?= base_url() ?>/img/mail.png" class="card-img-top mt-2"></center>
+            </div>
+          </div>
+
           <div class="modal-body">
             <?= csrf_field(); ?>
             <input type="hidden" name="id_user" id="id_user">
@@ -53,8 +124,8 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary btn-simpan">Simpan</button>
+            <button type="button" class="btn cancel" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-simpan submit">Simpan</button>
           </div>
         </form>
 
@@ -62,7 +133,7 @@
     </div>
   </div>
 
-  <div class="modal fade" id="mbUbahPassword" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <!-- <div class="modal fade" id="mbUbahPassword" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header badge-primary">
@@ -96,7 +167,7 @@
 
       </div>
     </div>
-  </div>
+  </div> -->
 
 </div>
 <?= $this->endSection(); ?>

@@ -11,13 +11,14 @@
         <div class="card shadow">
           <div class="card-header">
             <div class="row">
-              <div class="col-md-6">
-                <h3 class="text-gray-900 mb-0">Tabel Nilai Utility</h3>
-              </div>
-              <div class="col-md-6">
-                <button type="button" class="btn btn-dark mx-1 float-right btn-nilai-utility"><i class="fas fa fa-recycle"></i> Update Nilai Utility</button>
-              </div>
+             
+                <h1 class="jdl px-3 pt-4">Tabel Nilai Utility</h1>
+            
+              
+                
+              
             </div>
+            <button style="background-color: #F1491E; color: black; font-weight: bolder" type="button" class="btn btn-nilai-utility"><i class="fas fa fa-recycle"></i> Update Nilai Utility</button>
           </div>
           <div class="card-body">
             <div class="table-responsive">
@@ -52,13 +53,13 @@
       <?php else : ?>
         <div class="row">
           <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="alert alert-info" role="alert">
-                  <strong class="text-center">Data Belum Ada, </strong> <button type="button" class="btn btn-dark mx-1 btn-nilai-utility"><i class="fas fa fa-recycle"></i> Tentukan Nilai Utility</button>
+            
+              
+                <div class="alert " role="alert">
+                  <strong class="text-center">Data Belum Ada, </strong> <button style="background-color: #F1491E; color: black; font-weight: bolder" type="button" class="btn mx-1 btn-nilai-utility"><i class="fas fa fa-recycle"></i> Tentukan Nilai Utility</button>
                 </div>
-              </div>
-            </div>
+              
+            
           </div>
         </div>
 

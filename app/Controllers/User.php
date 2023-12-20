@@ -21,7 +21,7 @@ class User extends BaseController
       ->getRowArray();
 
     $data = [
-      'judul' => 'My Profile',
+      'judul' => 'Home',
       'data' => $user,
     ];
 

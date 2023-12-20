@@ -26,13 +26,16 @@ class NormalisasiBobot extends BaseController
 
     $bobotTernormalisasi = [];
     for ($i = 0; $i < sizeof($bobot); $i++) {
-      $nilaiNormalisasiBobot = ($bobot[$i]['nilai_bobot'] / $totalNilaiBobot);
-      $data = [
-        'id_pembobotan' => $bobot[$i]['id_pembobotan'],
-        'nilai_normalisasi_bobot' => $nilaiNormalisasiBobot,
-      ];
-
-      array_push($bobotTernormalisasi, $data);
+      if ($totalNilaiBobot > 100) {
+        return $this->response->setJSON(['status' => TRUE, 'warning' => 'Total nilai bobot tidak boleh lebih dari 100']);
+      } else {
+        $nilaiNormalisasiBobot = ($bobot[$i]['nilai_bobot'] / $totalNilaiBobot);
+        $data = [
+          'id_pembobotan' => $bobot[$i]['id_pembobotan'],
+          'nilai_normalisasi_bobot' => $nilaiNormalisasiBobot,
+        ];
+        array_push($bobotTernormalisasi, $data);
+      }
     }
 
     if (sizeOf($bobot) <= 0) {

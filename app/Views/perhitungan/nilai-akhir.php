@@ -12,11 +12,10 @@
         <div class="card shadow">
           <div class="card-header">
             <div class="row">
-              <div class="col-md-3">
-                <h3 class="text-gray-900 mb-0">Tabel Nilai Akhir</h3>
-              </div>
               <div class="col-md-9">
-                <button type="button" class="btn btn-dark mx-1 btn-nilai-akhir"><i class="fas fa fa-recycle"></i> Update Nilai Akhir</button>
+                <h3 class="jdl">Tabel Nilai Akhir</h3>
+              </div>
+              <div class="col-md-3">
                 <form action="/report/excelReporting" method="POST" class="d-inline">
                   <button type="submit" class="btn btn-success float-right" name="excel"><i class="fa fa-file-excel"></i> Excel</button>
                 </form>
@@ -25,10 +24,12 @@
                 </form>
               </div>
             </div>
+            <button style="background-color: #F1491E; color: black; font-weight: bolder" type="button" class="btn mx-1 btn-nilai-akhir"><i class="fas fa fa-recycle"></i> Update Nilai Akhir</button>
           </div>
           <div class="card-body">
+            
             <div class="table-responsive">
-              <table class="table table-bordered table-striped table-kriteria" id="dataTable">
+              <table class="table table-borderless table-striped table-kriteria" id="example">
                 <thead>
                   <th>Peringkat</th>
                   <th>Alternatif</th>
@@ -49,15 +50,16 @@
         </div>
 
       <?php else : ?>
+
         <div class="row">
           <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="alert alert-info" role="alert">
-                  <strong class="text-center">Data Belum Ada, </strong> <button type="button" class="btn btn-dark mx-1 btn-nilai-akhir"><i class="fas fa fa-recycle"></i> Tentukan Nilai Akhir</button>
+            
+              
+                <div class="alert " role="alert">
+                <strong class="text-center">Data Belum Ada, </strong> <button style="background-color: #F1491E; color: black; font-weight: bolder" type="button" class="btn mx-1 btn-nilai-akhir"><i class="fas fa fa-recycle"></i> Tentukan Nilai Akhir</button>
                 </div>
-              </div>
-            </div>
+              
+            
           </div>
         </div>
       <?php endif; ?>
@@ -70,6 +72,13 @@
 <?php $this->section('custom-js') ?>
 <script>
   $(document).ready(function() {
+
+    $('#example').DataTable({
+      paging: false,
+      scrollCollapse: true,
+      scrollY: false
+    });
+
     $('.btn-nilai-akhir').on('click', function() {
       $.ajax({
         url: '/NilaiAkhir/generateNilaiAkhir',

@@ -10,11 +10,11 @@ class Subkriteria extends Model
   protected $primaryKey       = 'id_sub_kriteria';
   protected $allowedFields    = ['id_kriteria', 'nama', 'nilai_preferensi'];
 
-  protected $validationRules = [
-    'id_kriteria' => 'required',
-    'nama.*' => 'required',
-    'nilai_preferensi.*' => 'required|is_numeric',
-  ];
+  // protected $validationRules = [
+  //   'id_kriteria' => 'required',
+  //   'nama.*' => 'required',
+  //   'nilai_preferensi.*' => 'required|is_numeric',
+  // ];
 
   protected $validationMessages = [
     "id_kriteria" => [

@@ -1,12 +1,17 @@
+
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul style="background: #0D0A09;" 
+    class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
   <!-- Sidebar - Brand -->
-  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+  <a class="sidebar-brand d-flex align-items-left justify-content-left" href="/">
     <div class="sidebar-brand-icon">
-      <i class="fas fa-laptop-code"></i>
+      <img src="<?= base_url() ?>/img/Ellipse 40.png" style="width: 30px;">
     </div>
-    <div class="sidebar-brand-text mx-3">Laptopify</div>
+    <div style="line-height: 1px; text-align: left;" class="sidebar-brand-text mx-2 pt-1">
+      <p style="font-size: 10px;">Team</p>
+      <p style="font-weight: 500">SaniaSmart</p>
+    </div>
   </a>
 
   <!-- Divider -->
@@ -15,7 +20,7 @@
   <?php if (session('role') === 'Admin') : ?>
 
     <!-- Heading -->
-    <div class="sidebar-heading">
+    <!-- <div class="sidebar-heading">
       Admin
     </div>
 
@@ -30,7 +35,7 @@
           <a class="collapse-item" href="/manage-user">User</a>
         </div>
       </div>
-    </li>
+    </li> -->
 
 
   <?php endif; ?>
@@ -39,17 +44,17 @@
     Menu
   </div>
 
-  <li class="nav-item <?= url_is('/user-profile') ? 'active' : '' ?>">
-    <a class="nav-link pb-0" href="/user-profile">
-      <i class="fas fa-fw fa-user"></i>
-      <span>My Profile</span></a>
+  <li class="nav-item <?= url_is('/home') ? 'active' : '' ?>">
+    <a class="nav-link pb-0" href="/home">
+      <i class="fas fa-fw fa-home"></i>
+      <span>Home</span></a>
   </li>
 
-  <li class="nav-item <?= url_is('/home') ? 'active' : '' ?>">
+  <!-- <li class="nav-item <?= url_is('/home') ? 'active' : '' ?>">
     <a class="nav-link pb-0" href="/home">
       <i class="fas fa-fw fa-info"></i>
       <span>Informasi</span></a>
-  </li>
+  </li> -->
 
   <li class="nav-item <?= url_is('/kriteria') || url_is('sub-kriteria') || url_is('sub-kriteria/create') ? 'active' : '' ?>">
     <a class="nav-link collapsed pb-0" href="#" data-toggle="collapse" data-target="#kriteriaCollapse" aria-expanded="true" aria-controls="kriteriaCollapse">
@@ -57,7 +62,7 @@
       <span>Kriteria</span>
     </a>
     <div id="kriteriaCollapse" class="collapse" data-parent="#accordionSidebar">
-      <div class="bg-white py-2 collapse-inner rounded">
+      <div style="background: #F55127;" class="py-2 collapse-inner rounded">
         <a class="collapse-item" href="/kriteria">Kriteria</a>
         <a class="collapse-item" href="/sub-kriteria">Sub Kriteria</a>
       </div>
@@ -82,7 +87,7 @@
       <span>Proses Perhitungan</span>
     </a>
     <div id="hitungCollapse" class="collapse" data-parent="#accordionSidebar">
-      <div class="bg-white py-2 collapse-inner rounded">
+      <div style="background: #F55127;" class="py-2 collapse-inner rounded">
         <a class="collapse-item" href="/perhitungan/nilai-kriteria">Nilai Kriteria</a>
         <a class="collapse-item" href="/perhitungan/nilai-utility">Nilai Utility</a>
         <a class="collapse-item" href="/perhitungan/nilai-akhir">Nilai Akhir</a>
@@ -90,11 +95,11 @@
     </div>
   </li>
 
-  <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block mt-2">
 
   <!-- Sidebar Toggler (Sidebar) -->
-  <div class="text-center d-none d-md-inline">
+  <!-- Divider -->
+  <div style="position: absolute;
+              bottom: 0;" class="text-center d-none d-md-inline pb-5 pl-3">
     <button class="rounded-circle border-0" id="sidebarToggle"></button>
   </div>
 

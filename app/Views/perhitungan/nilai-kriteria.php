@@ -11,17 +11,15 @@
         <div class="card shadow">
           <div class="card-header">
             <div class="row">
-              <div class="col-md-6">
-                <h3 class="text-gray-900 mb-0">Tabel Nilai Kriteria</h3>
-              </div>
-              <div class="col-md-6">
-                <button type="button" class="btn btn-dark mx-1 float-right btn-nilai-kriteria"><i class="fas fa fa-recycle"></i> Update Nilai Kriteria</button>
-              </div>
+             
+                <h1 class="jdl px-3 pt-4">Tabel Nilai Kriteria</h1>
+              
             </div>
+            <button style="background-color: #F1491E; color: black; font-weight: bolder" type="button" class="btn btn-nilai-kriteria"><i class="fas fa fa-recycle"></i> Update Nilai Kriteria</button>
           </div>
           <div class="card-body">
             <div class="table-responsive">
-              <table class="table table-sm table-bordered table-striped table-kriteria">
+              <table class="table table-sm table-borderless table-striped table-kriteria">
                 <thead>
                   <th>Alternatif / Kriteria</th>
                   <?php foreach ($kriteria->getResultArray() as $row) : ?>
