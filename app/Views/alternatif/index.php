@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col-md-12">
 
-      <!-- <h1 class="text-gray-900"><?= $judul; ?></h1>
+      <!-- <h1 class="text-light-900"><?= $judul; ?></h1>
 
       <?php if (session('role') === 'Admin') : ?>
         <div class="alert alert-primary mt-3" role="alert">
@@ -382,77 +382,77 @@
                   <div class="card shadow card-detail">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Kode Alternatif</div>
+                        <div class="col-md-3 text-light-900">Kode Alternatif</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 kode"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Nama Produk</div>
+                        <div class="col-md-3 text-light-900">Nama Produk</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 nama"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Harga</div>
+                        <div class="col-md-3 text-light-900">Harga</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 harga"></div>
                       </div>
                       <div class="row">
-                      <div class="col-md-3 text-gray-900">Rating Produk</div>
+                      <div class="col-md-3 text-light-900">Rating Produk</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 rating_produk"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Merk</div>
+                        <div class="col-md-3 text-light-900">Merk</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 merk"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Prosesor</div>
+                        <div class="col-md-3 text-light-900">Prosesor</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 prosesor"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Kapasitas Memori RAM (GB)</div>
+                        <div class="col-md-3 text-light-900">Kapasitas Memori RAM (GB)</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 kapasitas_ram"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Tipe Penyimpanan</div>
+                        <div class="col-md-3 text-light-900">Tipe Penyimpanan</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 tipe_penyimpanan"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Kapasitas Penyimpanan (GB)</div>
+                        <div class="col-md-3 text-light-900">Kapasitas Penyimpanan (GB)</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 kapasitas_penyimpanan"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Ukuran Layar</div>
+                        <div class="col-md-3 text-light-900">Ukuran Layar</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 ukuran_layar"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Kartu Grafis</div>
+                        <div class="col-md-3 text-light-900">Kartu Grafis</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 kartu_grafis"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Sistem Operasi</div>
+                        <div class="col-md-3 text-light-900">Sistem Operasi</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 sistem_operasi"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Masa Garansi (bulan)</div>
+                        <div class="col-md-3 text-light-900">Masa Garansi (bulan)</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 masa_garansi"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">Kondisi Produk</div>
+                        <div class="col-md-3 text-light-900">Kondisi Produk</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 kondisi_produk"></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3 text-gray-900">URL Produk</div>
+                        <div class="col-md-3 text-light-900">URL Produk</div>
                         <div class="col-md-1 d-none d-md-block">:</div>
                         <div class="col-md-8 url_produk"></div>
                       </div>
