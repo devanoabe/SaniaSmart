@@ -48,7 +48,7 @@
                       <td><?= $row['kode']; ?></td>
                       <td><?= $row['nama']; ?></td>
                       <td>
-                        <button type="button" class="btn btn-info btn-detail" data-id="<?= $row['id_alternatif']; ?>"><i class=" fas fa-eye"></i></button>
+                        <button style="background: #F1491E; color: black" type="button" class="btn btn-detail" data-id="<?= $row['id_alternatif']; ?>"><i class=" fas fa-eye"></i></button>
                       </td>
                     </tr>
                   <?php endforeach; ?>
