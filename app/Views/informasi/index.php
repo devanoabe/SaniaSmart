@@ -8,11 +8,11 @@
 
       <div class="card shadow-sm">
         <div class="card-body badge-primary">
-          <h3 class="text-center"><b>Informasi Laptopify</b></h3>
+          <h3 class="text-center"><b>Informasi SaniaSmart</b></h3>
 
           <h5><b><u> Deskripsi </u></b></h5>
           <p>
-            Laptopify merupakan sebuah sistem pendukung keputusan yang bertujuan untuk merekomendasikan laptop pada e-commerce kepada user berdasarkan pilihan-pilihan dari atribut yang ditentukan sesuai dengan preferensi yang dibutuhkan.
+            SaniaSmart merupakan sebuah sistem pendukung keputusan yang bertujuan untuk merekomendasikan laptop pada e-commerce kepada user berdasarkan pilihan-pilihan dari atribut yang ditentukan sesuai dengan preferensi yang dibutuhkan.
           </p>
           <h5><b><u> Langkah-langkah untuk Menghasilkan Laptop Rekomendasi Terbaik </u></b></h5>
           <p>

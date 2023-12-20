@@ -61,7 +61,7 @@
     <div class="col-md-8">
       <h1>Kapan sebuah website membantumu merasa terbantu dalam mengambil keputusan?</h1>
       <p class="pt-1">
-        Kami akan memberikan contoh penggunaan AHP dalam berbagai konteks, seperti pemilihan vendor, evaluasi kinerja karyawan, pemilihan investasi, dan banyak lagi. Anda akan melihat bagaimana AHP dapat membantu menghasilkan keputusan yang lebih baik.
+        Kami akan memberikan contoh penggunaan SMART dalam berbagai konteks, seperti pemilihan Laptop dengan kriteria RAM dan banyak lagi. Anda akan melihat bagaimana AHP dapat membantu menghasilkan keputusan yang lebih baik.
       </p>
     </div>
     <div class="col-md-4 px-5">
