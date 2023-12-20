@@ -14,7 +14,7 @@
                 <h1 class="jdl"><?= $judul; ?></h1>
                 <button class="btn btn-tambah tbh" data-toggle="modal" data-target="#modalBoxTambah" data-backdrop="static" data-keyboard="false"><i class="fas fa fa-plus"></i> Tambah</button>
               </div>
-              <div class="card-header s">
+              <div class="card-header d-flex justify-content-end">
                 <button class="btn btn-hapus hps"><i class="fas fa fa-trash-alt"></i> Hapus</button>
                 <button class="btn btn-ubah ubh"><i class="fas fa fa-edit"></i> Ubah</button>
               </div>
